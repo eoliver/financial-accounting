@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.13)  13 OCT 2022 19:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.13)  14 OCT 2022 19:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**"D:/02_PROFESSIONAL/FINANCE/Financial Accounting/financial-accounting/P1CH1-01-Overview-of-Business-Activities.tex"
-(d:/02_PROFESSIONAL/FINANCE/Financial Accounting/financial-accounting/P1CH1-01-Overview-of-Business-Activities.tex
+**"D:/02_PROFESSIONAL/FINANCE/Financial Accounting/financial-accounting/Part-01-Chapter-01/P01-CH01-Section-00/P1CH1-00-Introduction.tex"
+(d:/02_PROFESSIONAL/FINANCE/Financial Accounting/financial-accounting/Part-01-Chapter-01/P01-CH01-Section-00/P1CH1-00-Introduction.tex
 LaTeX2e <2022-06-01> patch level 5
 L3 programming layer <2022-09-28> (c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -221,8 +221,8 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count287
 \l__pdf_internal_box=\box64
-) (./P1CH1-01-Overview-of-Business-Activities.aux)
-\openout1 = `P1CH1-01-Overview-of-Business-Activities.aux'.
+) (./P1CH1-00-Introduction.aux)
+\openout1 = `P1CH1-00-Introduction.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
 LaTeX Font Info:    ... okay on input line 55.
@@ -281,26 +281,20 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 
 [1
 
-{c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<figure/plot-1.pdf, id=14, 361.35pt x 144.54pt>
-File: figure/plot-1.pdf Graphic file (type pdf)
-<use figure/plot-1.pdf>
-Package pdftex.def Info: figure/plot-1.pdf  used on input line 153.
-(pdftex.def)             Requested size: 361.34912pt x 144.53963pt.
-[2 <./figure/plot-1.pdf>] (./P1CH1-01-Overview-of-Business-Activities.aux) ) 
+{c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./P1CH1-00-Introduction.aux) ) 
 Here is how much of TeX's memory you used:
- 6448 strings out of 477011
- 143028 string characters out of 5825671
- 487626 words of memory out of 5000000
- 27558 multiletter control sequences out of 15000+600000
- 471595 words of font info for 37 fonts, out of 8000000 for 9000
+ 6430 strings out of 477011
+ 142681 string characters out of 5825671
+ 468588 words of memory out of 5000000
+ 27545 multiletter control sequences out of 15000+600000
+ 471076 words of font info for 34 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 60i,10n,65p,641b,518s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk><c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb><c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on P1CH1-01-Overview-of-Business-Activities.pdf (2 pages, 103290 bytes).
+ 60i,5n,65p,661b,518s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on P1CH1-00-Introduction.pdf (1 page, 56535 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
- 38 compressed objects within 1 object stream
+ 28 PDF objects out of 1000 (max. 8388607)
+ 16 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
