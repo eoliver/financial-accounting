@@ -45,6 +45,36 @@ Document description: learning objectives for chapter 1.\par
 % -----------------------------------------------------------------------------------------------
 
 
+\begin{itemize}
+  
+  \item Understand four key activities of business entities:
+  
+    \begin{description}
+      \item[a)] Establishing goals and strategies.
+      \item[b)] Obtaining financing.
+      \item[c)] Making investments.
+      \item[d)] Conducting operations.
+    \end{description}
+  
+  \item Understand the purpose and content of the financial statements:
+  
+    \begin{description}
+      \item[a)] Balance sheet.
+      \item[b)] Income statement.
+      \item[c)] Statement of cash flows.
+      \item[d)] Statement of shareholders' equity.
+    \end{description}
+    
+  \item Understand the roles of participants in the financial reporting process.
+  
+  \item Gain an awareness of financial reporting as part of a global system for providing 
+        information for resource allocation decisions.
+  
+  \item Understand the difference between the cash basis and the accrual basis of accounting, 
+        and why the latter provides a better measure of performance.
+        
+\end{itemize}
+
 
 
 
