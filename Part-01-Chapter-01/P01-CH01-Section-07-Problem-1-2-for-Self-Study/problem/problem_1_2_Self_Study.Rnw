@@ -1,0 +1,153 @@
+\documentclass{article}
+% --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+% --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+% --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+\usepackage[T1]{fontenc}
+\usepackage[UTF8]{inputenc}
+\usepackage{tgschola}
+\usepackage{textcomp}
+\usepackage{tabularx}
+\usepackage{indentfirst}
+\usepackage{parskip}
+\usepackage{array}
+\usepackage{siunitx}
+\usepackage{float}
+% --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+% --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+% --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+\setlength{\parindent}{6.5ex}  
+\setlength{\parskip}{1.5em} 
+\sisetup{
+    detect-mode=false,
+    mode=text, 
+    round-mode = places, 
+    round-precision = 2, 
+    output-decimal-marker={.}, 
+    group-separator ={,}, 
+    group-minimum-digits = 3
+}
+% --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+% --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+% --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+<<setup-options,echo=FALSE,eval=TRUE>>=
+knitr::opts_chunk$set(
+  size = "scriptsize",
+  eval = TRUE,
+  echo = FALSE,
+  results = "markup",
+  comment = "",
+  fig.width = 5,
+  fig.height = 2,
+  fig.align = "center",
+  options(scipen=999)
+  )
+@
+% --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+% --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+% --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+% https://tex.stackexchange.com/questions/297892/old-style-financial-statement
+% --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+\newcolumntype{I}{@{}X<{\xdotfill}}
+\newcolumntype{R}{>{\qq}r<{\qq}}
+\makeatletter
+\newcommand{\thickhline}{%
+    \noalign {\ifnum 0=`}\fi \hrule height 1pt
+    \futurelet \reserved@a \@xhline
+}
+\newcommand{\xdotfill}{\leavevmode\leaders\hb@xt@.44em{\hss.\hss}\hfill\hskip-\tabcolsep\kern\z@}
+\makeatother
+\newcommand\qq{\quad}
+\newcommand\tablesec[1]{\multicolumn{1}{@{}l|}{#1}&&\\}
+\newcommand\tabletitle[1]{\multicolumn{1}{@{}c|}{\SEPx{2}#1}}
+\newcommand\SEPx[1]{\vrule width 0pt height \dimexpr\fontcharht\font`A+2ex depth #1ex\relax}
+\newcommand\SEP{\SEPx{0}}
+\newcommand\?{\hphantom{0}}
+\renewcommand{\arraystretch}{1.2}
+% --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+% --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+\title{Study Notes\\Financial Accounting: An Introduction to Concepts, Methods, and Uses, 14e\\
+by Roman Weil, Katherine Schipper, Jennifer Francis}% --- --- --- --- --- --- --- --- --- --- --- --- ---
+\author{Emerson Maurício de Oliveira}% --- --- --- --- --- --- --- --- --- --- --
+% --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+\begin{document}
+\maketitle
+
+\section{Problem 1.2 for Self-Study}
+
+\textbf{Cash versus accrual basis of accounting}. \textit{Thompson Hardware Store} commences 
+operations on January 1, 2013, when Jacob Thompson invests \$\num{30000} for all of the common 
+stock of the firm. The firm rents a building on January 1 and pays two months' rent in advance 
+in the amount of \$\num{2000}. On January 1 it also pays the \$\num{1200} premium for property 
+and liability insurance coverage for the year ending December 31, 2013. The firm purchases 
+\$\num{28000} of merchandise inventory on account on January 2 and pays \$\num{10000} of this 
+amount on January 25. On January 31 the cost of unsold merchandise is \$\num{15000}. During 
+January the firm makes cash sales to customers totaling \$\num{20000} and sales on account 
+totaling \$\num{9000}. The firm collects \$\num{2000} from these credit sales by the end of 
+January. The firm pays other costs during January as follows: utilities, \$\num{400}; salaries, 
+\$\num{650}; and taxes, \$\num{350}. What are \textit{Thompson Hardware Store's} revenues, 
+expenses, and income for January, assuming (1) the \textit{accrual basis of accounting} and 
+(2) the \textit{cash basis of accounting}?
+
+<<>>=
+salesRevenue <- 140000.00
+costOfGoodsS <- -42000.00
+rentExpense  <-  -7000.00
+salariesExpe <- -25000.00
+netIncome <- salesRevenue + costOfGoodsS + rentExpense + salariesExpe
+@
+
+% --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+\begin{table}[H]
+\begin{tabularx}{\linewidth}{I R R}
+\thickhline\SEP
+Sales Revenue                               & \texteuro\hphantom{(}\num{\Sexpr{salesRevenue}}\hphantom{)}\\
+Cost of Goods Sold                          & (\num{\Sexpr{-costOfGoodsS}})\\
+Rent Expense                                & (\num{\Sexpr{-rentExpense}})\\
+Salaries Expense                            & (\num{\Sexpr{-salariesExpe}})\\
+Net Income                                  & \texteuro\hphantom{(}\num{\Sexpr{netIncome}}\hphantom{)}\\[2ex]
+\thickhline 
+\end{tabularx}
+\end{table}
+% --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+officia deserunt mollit anim id est laborum.\par
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+officia deserunt mollit anim id est laborum.\par
+
+% --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+% --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+% --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+% \renewcommand{\arraystretch}{1.2}
+% \noindent
+% \begin{tabularx}{\linewidth}{I|R|R}
+% \thickhline
+% \tabletitle{Item}                         & \multicolumn{1}{c|}{1939}           & \multicolumn{1}{c}{1940}\\
+% \hline\SEP
+% Sales                                     & \$187,400                           & \$468,300 \\
+% Net income                                & 18,284                              & 27,684 \\
+% \tablesec{Dec. 31 figures:}
+% \qq Inventory                             & 44,163                              & 74,452 \\
+% \qq Total current assets                  & 76,995                              & 109,481\\
+% \qq Current ratio                         & 3.7:1\?                             & 2.0:1\? \\
+% \qq Working capital per dollar of sales   & 41\textcent\?                       & 23\textcent\? \\
+% \tablesec{Per share of common:}
+% \qq Earned in year                        & \$4.22\?\?                          & \$10.02\?\? \\
+% \qq Dividend                              & 4.00\?\?                            & 4.00\?\? \\
+% \qq Net-asset value                       & 45\?                                & 76\? \\[2ex]
+% \thickhline 
+% \end{tabularx}
+% --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+% --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+% --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+\end{document}
