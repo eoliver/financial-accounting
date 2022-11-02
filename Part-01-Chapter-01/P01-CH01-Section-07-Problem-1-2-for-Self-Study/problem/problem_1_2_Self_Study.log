@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.28)  31 OCT 2022 19:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.28)  2 NOV 2022 20:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -626,22 +626,31 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 116.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 116.
-(c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tex-gyre/ts1qcs.fd) [1
+[1
 
-{c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./problem_1_2_Self_Study.aux) ) 
+{c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 140.
+(c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Overfull \hbox (37.93695pt too wide) in paragraph at lines 149--149
+[][]\T1/cmtt/m/n/7 totCashOutfl[] []<-[] []cashPaidRent[] []+[] []cashPaidEnsu[] []+[] []cashPaidMerc[] []+[] []cashPaidUtil[] []+[] []cashPaidSala[] []+[] []cashPaidTaxe[][] 
+ []
+
+(c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tex-gyre/ts1qcs.fd) [2] [3] (./problem_1_2_Self_Study.aux) ) 
 Here is how much of TeX's memory you used:
- 5659 strings out of 477006
- 132269 string characters out of 5825536
- 449825 words of memory out of 5000000
- 26765 multiletter control sequences out of 15000+600000
- 494638 words of font info for 46 fonts, out of 8000000 for 9000
+ 5682 strings out of 477006
+ 132962 string characters out of 5825536
+ 456824 words of memory out of 5000000
+ 26784 multiletter control sequences out of 15000+600000
+ 498041 words of font info for 48 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  55i,11n,62p,675b,518s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}<c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/tex-gyre/qcsb.pfb><c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/tex-gyre/qcsr.pfb><c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/tex-gyre/qcsri.pfb>
-Output written on problem_1_2_Self_Study.pdf (2 pages, 80939 bytes).
+{c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc} <c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0800.525pk>{c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}<c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/tex-gyre/qcsb.pfb><c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/tex-gyre/qcsr.pfb><c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/tex-gyre/qcsri.pfb>
+Output written on problem_1_2_Self_Study.pdf (3 pages, 92785 bytes).
 PDF statistics:
- 31 PDF objects out of 1000 (max. 8388607)
- 19 compressed objects within 1 object stream
+ 80 PDF objects out of 1000 (max. 8388607)
+ 25 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

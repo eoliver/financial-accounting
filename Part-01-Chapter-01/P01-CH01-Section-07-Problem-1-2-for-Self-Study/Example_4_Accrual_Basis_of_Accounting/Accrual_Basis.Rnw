@@ -76,99 +76,63 @@ by Roman Weil, Katherine Schipper, Jennifer Francis}% --- --- --- --- --- --- --
 \begin{document}
 \maketitle
 
-\section{Problem 1.2 for Self-Study}
+\section{Example 4}
 
-\textbf{Cash versus accrual basis of accounting}. \textit{Thompson Hardware Store} commences 
-operations on January 1, 2013, when Jacob Thompson invests \$\num{30000} for all of the common 
-stock of the firm. The firm rents a building on January 1 and pays two months' rent in advance 
-in the amount of \$\num{2000}. On January 1 it also pays the \$\num{1200} premium for property 
-and liability insurance coverage for the year ending December 31, 2013. The firm purchases 
-\$\num{28000} of merchandise inventory on account on January 2 and pays \$\num{10000} of this 
-amount on January 25. On January 31 the cost of unsold merchandise is \$\num{15000}. During 
-January the firm makes cash sales to customers totaling \$\num{20000} and sales on account 
-totaling \$\num{9000}. The firm collects \$\num{2000} from these credit sales by the end of 
-January. The firm pays other costs during January as follows: utilities, \$\num{400}; salaries, 
-\$\num{650}; and taxes, \$\num{350}. What are \textit{Thompson Hardware Store's} revenues, 
-expenses, and income for January, assuming (1) the \textit{accrual basis of accounting} and 
-(2) the \textit{cash basis of accounting}?
+\textbf{Accrual basis of accounting}. Under the accrual basis of accounting, \textit{Adam-Art Supply} 
+recognizes, for January 2013, the entire \texteuro\num{140000} of sales during January as 
+revenue, even though it has received only \texteuro\num{114000} in cash by the end of January. 
+The firm reasonably expects to collect the remaining accounts receivable of \texteuro\num{26000} 
+in February or soon thereafter. The sale of the goods, rather than the collection of cash from 
+customers, triggers the recognition of revenue. The merchandise sold during January cost \texteuro\num{42000}. 
+Recognizing this amount as an expense (cost of goods sold) matches the cost of the merchandise sold with 
+revenue from sales of those goods. Of the advance rental payment of \texteuro\num{14000}, only 
+\texteuro\num{7000} applies to the cost of benefits consumed during January. The remaining rental of 
+\texteuro\num{7000} purchases benefits for the month of February and will therefore appear on the 
+January 31 balance sheet as an asset. Unlike the cost of merchandise sold, January's salaries and 
+rent expenses do not match January revenues. These costs become expenses of January to the extent 
+that the firm consumed salary and rent services during the month. Using the accrual basis of 
+accounting, Adam-Art would report January net income of \texteuro\num{66000}:
 
-\newpage
-
-Cash Basis of accounting:\par
-
-<<cash, echo=TRUE>>=
-creditSales <- 2000.00
-totCashInflo <- creditSales
-cashPaidRent <- -2000.00
-cashPaidEnsu <- -1200.00
-cashPaidMerc <- -10000.00 - 5000.00
-cashPaidUtil <- -400.00
-cashPaidSala <- -650.00
-cashPaidTaxe <- -350.00
-totCashOutfl <- cashPaidRent + cashPaidEnsu + cashPaidMerc + cashPaidUtil + cashPaidSala + cashPaidTaxe
-netCashFlow  <- totCashInflo + totCashOutfl
+<<>>=
+salesRevenu <- 140000.00
+costGoodsSo <- -42000.00
+rentExpense <-  -7000.00
+salariesExp <- -25000.00
+netIncome <- salesRevenu + costGoodsSo + rentExpense + salariesExp
 @
 
-% --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
-\begin{table}[H]
-\begin{tabularx}{\linewidth}{I R R}
-\thickhline
-\tablesec{\textbf{Cash Inflows}}
-Cash Receipts from Customers                & \texteuro\hphantom{(}\num{\Sexpr{creditSales}}\hphantom{)}\\
-Total Cash Inflows                          & \hphantom{(}\num{\Sexpr{totCashInflo}}\hphantom{)}\\
-\tablesec{\textbf{Cash Outflows}}
-Cash Paid for Rent                          & (\num{\Sexpr{-cashPaidRent}})\\
-Cash Paid for Ensurance                     & (\num{\Sexpr{-cashPaidEnsu}})\\
-Cash Paid for Merchandise                   & (\num{\Sexpr{-cashPaidMerc}})\\
-Cash Paid for Utilities                     & (\num{\Sexpr{-cashPaidUtil}})\\
-Cash Paid for Salaries                      & (\num{\Sexpr{-cashPaidSala}})\\
-Cash Paid for Taxes                         & (\num{\Sexpr{-cashPaidTaxe}})\\
-Total Cash Outflows                         & (\num{\Sexpr{-totCashOutfl}})\\
-Net Cash Flow                               & \texteuro\hphantom{(}(\num{\Sexpr{-netCashFlow}})\\
-\thickhline
-\end{tabularx}
-\end{table}
-% --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
 
-Accrual basis of accounting:\par
-
-<<accrual, echo=TRUE>>=
-salesRevenu <- 20000.00
-costGoodsSo <- -13000.00
-rentExpense <- -100.00
-salariesExp <- -450.00
-totExpenses <- costGoodsSo + rentExpense + salariesExp
-netIncome <- salesRevenu + totExpenses
-@
 
 % --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+
+
 \begin{table}[H]
 \begin{tabularx}{\linewidth}{I R R}
 \thickhline\SEP
-Sales Revenue                               & \$\hphantom{(}\num{\Sexpr{salesRevenu}}\hphantom{)}\\
+Sales Revenue                               & \texteuro\hphantom{(}\num{\Sexpr{salesRevenu}}\hphantom{)}\\
 Cost of Goods Sold                          & (\num{\Sexpr{-costGoodsSo}})\\
 Rent Expense                                & (\num{\Sexpr{-rentExpense}})\\
 Salaries Expense                            & (\num{\Sexpr{-salariesExp}})\\
-Net Income                                  & \$\hphantom{(}\num{\Sexpr{netIncome}}\hphantom{)}\\[2ex]
-\thickhline 
+Net Income                                  & \texteuro\hphantom{(}\num{\Sexpr{netIncome}}\hphantom{)}\\[2ex]
+\thickhline
 \end{tabularx}
 \end{table}
+
+
 % --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
 
-\section{Summary}
 
-Cash basis of accounting:\par
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+officia deserunt mollit anim id est laborum.\par
 
-Income:   \num{\Sexpr{creditSales}}\par
-Expenses: \num{\Sexpr{totCashOutfl}}\par
-Revenues: \num{\Sexpr{netCashFlow}}\par
-
-Accrual basis of accounting:\par
-
-Income:   \num{\Sexpr{salesRevenu}}\par
-Expenses: \num{\Sexpr{totExpenses}}\par
-Revenues: \num{\Sexpr{netIncome}}\par
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+officia deserunt mollit anim id est laborum.\par
 
 % --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
 % --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 

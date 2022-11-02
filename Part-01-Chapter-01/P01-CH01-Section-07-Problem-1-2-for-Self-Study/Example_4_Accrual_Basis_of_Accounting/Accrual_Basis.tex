@@ -115,107 +115,57 @@ by Roman Weil, Katherine Schipper, Jennifer Francis}% --- --- --- --- --- --- --
 \begin{document}
 \maketitle
 
-\section{Problem 1.2 for Self-Study}
+\section{Example 4}
 
-\textbf{Cash versus accrual basis of accounting}. \textit{Thompson Hardware Store} commences 
-operations on January 1, 2013, when Jacob Thompson invests \$\num{30000} for all of the common 
-stock of the firm. The firm rents a building on January 1 and pays two months' rent in advance 
-in the amount of \$\num{2000}. On January 1 it also pays the \$\num{1200} premium for property 
-and liability insurance coverage for the year ending December 31, 2013. The firm purchases 
-\$\num{28000} of merchandise inventory on account on January 2 and pays \$\num{10000} of this 
-amount on January 25. On January 31 the cost of unsold merchandise is \$\num{15000}. During 
-January the firm makes cash sales to customers totaling \$\num{20000} and sales on account 
-totaling \$\num{9000}. The firm collects \$\num{2000} from these credit sales by the end of 
-January. The firm pays other costs during January as follows: utilities, \$\num{400}; salaries, 
-\$\num{650}; and taxes, \$\num{350}. What are \textit{Thompson Hardware Store's} revenues, 
-expenses, and income for January, assuming (1) the \textit{accrual basis of accounting} and 
-(2) the \textit{cash basis of accounting}?
+\textbf{Accrual basis of accounting}. Under the accrual basis of accounting, \textit{Adam-Art Supply} 
+recognizes, for January 2013, the entire \texteuro\num{140000} of sales during January as 
+revenue, even though it has received only \texteuro\num{114000} in cash by the end of January. 
+The firm reasonably expects to collect the remaining accounts receivable of \texteuro\num{26000} 
+in February or soon thereafter. The sale of the goods, rather than the collection of cash from 
+customers, triggers the recognition of revenue. The merchandise sold during January cost \texteuro\num{42000}. 
+Recognizing this amount as an expense (cost of goods sold) matches the cost of the merchandise sold with 
+revenue from sales of those goods. Of the advance rental payment of \texteuro\num{14000}, only 
+\texteuro\num{7000} applies to the cost of benefits consumed during January. The remaining rental of 
+\texteuro\num{7000} purchases benefits for the month of February and will therefore appear on the 
+January 31 balance sheet as an asset. Unlike the cost of merchandise sold, January's salaries and 
+rent expenses do not match January revenues. These costs become expenses of January to the extent 
+that the firm consumed salary and rent services during the month. Using the accrual basis of 
+accounting, Adam-Art would report January net income of \texteuro\num{66000}:
 
-\newpage
 
-Cash Basis of accounting:\par
 
-\begin{knitrout}\scriptsize
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlstd{creditSales} \hlkwb{<-} \hlnum{2000.00}
-\hlstd{totCashInflo} \hlkwb{<-} \hlstd{creditSales}
-\hlstd{cashPaidRent} \hlkwb{<-} \hlopt{-}\hlnum{2000.00}
-\hlstd{cashPaidEnsu} \hlkwb{<-} \hlopt{-}\hlnum{1200.00}
-\hlstd{cashPaidMerc} \hlkwb{<-} \hlopt{-}\hlnum{10000.00} \hlopt{-} \hlnum{5000.00}
-\hlstd{cashPaidUtil} \hlkwb{<-} \hlopt{-}\hlnum{400.00}
-\hlstd{cashPaidSala} \hlkwb{<-} \hlopt{-}\hlnum{650.00}
-\hlstd{cashPaidTaxe} \hlkwb{<-} \hlopt{-}\hlnum{350.00}
-\hlstd{totCashOutfl} \hlkwb{<-} \hlstd{cashPaidRent} \hlopt{+} \hlstd{cashPaidEnsu} \hlopt{+} \hlstd{cashPaidMerc} \hlopt{+} \hlstd{cashPaidUtil} \hlopt{+} \hlstd{cashPaidSala} \hlopt{+} \hlstd{cashPaidTaxe}
-\hlstd{netCashFlow}  \hlkwb{<-} \hlstd{totCashInflo} \hlopt{+} \hlstd{totCashOutfl}
-\end{alltt}
-\end{kframe}
-\end{knitrout}
+
 
 % --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
-\begin{table}[H]
-\begin{tabularx}{\linewidth}{I R R}
-\thickhline
-\tablesec{\textbf{Cash Inflows}}
-Cash Receipts from Customers                & \texteuro\hphantom{(}\num{2000}\hphantom{)}\\
-Total Cash Inflows                          & \hphantom{(}\num{2000}\hphantom{)}\\
-\tablesec{\textbf{Cash Outflows}}
-Cash Paid for Rent                          & (\num{2000})\\
-Cash Paid for Ensurance                     & (\num{1200})\\
-Cash Paid for Merchandise                   & (\num{15000})\\
-Cash Paid for Utilities                     & (\num{400})\\
-Cash Paid for Salaries                      & (\num{650})\\
-Cash Paid for Taxes                         & (\num{350})\\
-Total Cash Outflows                         & (\num{19600})\\
-Net Cash Flow                               & \texteuro\hphantom{(}(\num{17600})\\
-\thickhline
-\end{tabularx}
-\end{table}
-% --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
 
-Accrual basis of accounting:\par
 
-\begin{knitrout}\scriptsize
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlstd{salesRevenu} \hlkwb{<-} \hlnum{20000.00}
-\hlstd{costGoodsSo} \hlkwb{<-} \hlopt{-}\hlnum{13000.00}
-\hlstd{rentExpense} \hlkwb{<-} \hlopt{-}\hlnum{100.00}
-\hlstd{salariesExp} \hlkwb{<-} \hlopt{-}\hlnum{450.00}
-\hlstd{totExpenses} \hlkwb{<-} \hlstd{costGoodsSo} \hlopt{+} \hlstd{rentExpense} \hlopt{+} \hlstd{salariesExp}
-\hlstd{netIncome} \hlkwb{<-} \hlstd{salesRevenu} \hlopt{+} \hlstd{totExpenses}
-\end{alltt}
-\end{kframe}
-\end{knitrout}
-
-% --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
 \begin{table}[H]
 \begin{tabularx}{\linewidth}{I R R}
 \thickhline\SEP
-Sales Revenue                               & \$\hphantom{(}\num{20000}\hphantom{)}\\
-Cost of Goods Sold                          & (\num{13000})\\
-Rent Expense                                & (\num{100})\\
-Salaries Expense                            & (\num{450})\\
-Net Income                                  & \$\hphantom{(}\num{6450}\hphantom{)}\\[2ex]
-\thickhline 
+Sales Revenue                               & \texteuro\hphantom{(}\num{140000}\hphantom{)}\\
+Cost of Goods Sold                          & (\num{42000})\\
+Rent Expense                                & (\num{7000})\\
+Salaries Expense                            & (\num{25000})\\
+Net Income                                  & \texteuro\hphantom{(}\num{66000}\hphantom{)}\\[2ex]
+\thickhline
 \end{tabularx}
 \end{table}
+
+
 % --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
 
-\section{Summary}
 
-Cash basis of accounting:\par
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+officia deserunt mollit anim id est laborum.\par
 
-Income:   \num{2000}\par
-Expenses: \num{-19600}\par
-Revenues: \num{-17600}\par
-
-Accrual basis of accounting:\par
-
-Income:   \num{20000}\par
-Expenses: \num{-13550}\par
-Revenues: \num{6450}\par
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+officia deserunt mollit anim id est laborum.\par
 
 % --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
 % --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 

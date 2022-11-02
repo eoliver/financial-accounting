@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.28)  1 NOV 2022 19:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.28)  1 NOV 2022 19:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**"D:/PROFESSIONAL/FINANCE/Financial Accounting/financial-accounting/Part-01-Chapter-01/P01-CH01-Section-07-Problem-1-2-for-Self-Study/Example_3_Cash_Basis_of_Accounting/Cash_Basis.tex"
-(d:/PROFESSIONAL/FINANCE/Financial Accounting/financial-accounting/Part-01-Chapter-01/P01-CH01-Section-07-Problem-1-2-for-Self-Study/Example_3_Cash_Basis_of_Accounting/Cash_Basis.tex
+**"D:/PROFESSIONAL/FINANCE/Financial Accounting/financial-accounting/Part-01-Chapter-01/P01-CH01-Section-07-Problem-1-2-for-Self-Study/Example_4_Accrual_Basis_of_Accounting/Accrual_Basis.tex"
+(d:/PROFESSIONAL/FINANCE/Financial Accounting/financial-accounting/Part-01-Chapter-01/P01-CH01-Section-07-Problem-1-2-for-Self-Study/Example_4_Accrual_Basis_of_Accounting/Accrual_Basis.tex
 LaTeX2e <2022-06-01> patch level 5
 L3 programming layer <2022-10-26> (c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -597,8 +597,8 @@ File: t1qcs.fd 2009/09/25 v1.2 font definition file for T1/qcs
 File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count273
 \l__pdf_internal_box=\box62
-) (./Cash_Basis.aux)
-\openout1 = `Cash_Basis.aux'.
+) (./Accrual_Basis.aux)
+\openout1 = `Accrual_Basis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 115.
 LaTeX Font Info:    ... okay on input line 115.
@@ -631,17 +631,17 @@ LaTeX Font Info:    Trying to load font information for TS1+qcs on input line 12
 File: ts1qcs.fd 2009/09/25 v1.2 font definition file for TS1/qcs
 ) [1
 
-{c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./Cash_Basis.aux) ) 
+{c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./Accrual_Basis.aux) ) 
 Here is how much of TeX's memory you used:
  5659 strings out of 477006
- 132245 string characters out of 5825536
- 449800 words of memory out of 5000000
+ 132290 string characters out of 5825536
+ 449806 words of memory out of 5000000
  26765 multiletter control sequences out of 15000+600000
  494638 words of font info for 46 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 55i,11n,62p,690b,518s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 55i,11n,62p,696b,518s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}<c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/tex-gyre/qcsb.pfb><c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/tex-gyre/qcsr.pfb><c:/Users/eoliv/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/tex-gyre/qcsri.pfb>
-Output written on Cash_Basis.pdf (2 pages, 77481 bytes).
+Output written on Accrual_Basis.pdf (2 pages, 76939 bytes).
 PDF statistics:
  31 PDF objects out of 1000 (max. 8388607)
  19 compressed objects within 1 object stream
